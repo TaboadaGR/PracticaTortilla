@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ejerciciodomcss.css">
+</head>
+<body>
+	<h1>Propiedades y valores de un objeto DOM</h1>
+
+		<table id="tabla">
+			<tr>
+				<th>Propiedad</th>
+				<th>Valor</th>
+			</tr>
+		</table>
+
+		<button id="miBoton"onclick="mostrar()">Comenzar</button>
+
+
+	<script>
+	function mostrar() {
+	var propiedad = prompt("Introduzca la propiedad a consultar:");
+	var objeto = window[propiedad];
+	var i,tabla = document.getElementById("tabla");
+	var undefine =("non defined");
+
+	for(i in objeto){ 
+		if (typeof objeto[i]=="object"||typeof objeto[i]=="undefined") {
+		tabla.innerHTML+="<tr><td>"+i+"</td><td>"+undefine+"</td></tr>"
+		}
+		else{
+			tabla.innerHTML+="<tr><td>"+i+"</td><td>"+objeto[i]+"</td></tr>"
+		}
+		
+	}
+	}
+	
+
+	</script>
+</body>
+</html>

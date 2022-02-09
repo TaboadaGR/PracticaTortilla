@@ -1,0 +1,373 @@
+/*importo las fuentes de letra para la pagina web*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap');
+
+/*estilo basico para establecer unos parametros estandar*/
+*{
+	text-decoration:none; 
+	list-style:none; 
+	margin:0px; 
+	padding:0px; 
+	outline:none;
+}
+
+body{
+	margin:0px; 
+	padding:0px; 
+	font-family: 'Bebas Neue', cursive;
+/* para buscadores antiguos */
+	background: #bdc3c7;  
+
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+	
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+
+	margin-bottom:50px;
+}
+
+section{
+	width:100%; 
+	max-width:1200px; 
+	display:table;
+	position:relative;
+}
+
+h1{
+	margin:0px auto; 
+	display:table; 
+	font-size:26px; 
+	padding:40px 0px; 
+	color:#000000; 
+	text-align:center;
+}
+
+header{
+	width:100%; 
+	display:table; 
+	
+}
+
+#logo{
+	float:left;  
+	height: 150px;
+	border:groove 5px;
+
+}
+
+nav{
+	width:auto; 
+	float:right;
+	margin-top: 30px;
+}
+
+nav ul{
+	display:table; 
+	float:right;
+}
+
+nav ul li{
+	float:left;
+}
+
+nav ul li:last-child{
+	padding-right:0px;
+}
+
+nav ul li a{
+	color:whitesmoke; 
+	font-size:25px; 
+	margin-top: 0px;
+	padding: 20px 15px; 
+	display:inline-block;
+	transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover{
+	background-color:whitesmoke; 
+	color:#D2D1D1; 
+	transition: all 0.5s ease 0s;
+
+}
+
+nav ul li a:hover i{
+	color:#D2D1D1; 
+	transition: all 0.5s ease 0s;
+}
+
+nav ul li a i{
+	padding-right:10px; 
+	color:whitesmoke; 
+	transition: all 0.5s ease 0s;
+}
+
+.toggle-menu ul{
+	display:table; 
+	width:100px;
+	margin-top: 50px;
+}
+
+.toggle-menu ul li{
+	width:100%; 
+	height:20px; 
+	background-color:#E2E2E2; 
+	margin-bottom:15px;
+}
+
+.toggle-menu ul li:last-child{
+	margin-bottom:0px;
+}
+
+input[type=checkbox], label{
+	display:none;
+}
+#page{
+	margin-top: 50px;
+	justify-content: center;
+}
+
+#page #main {
+	display: flex;
+	justify-content: center;
+	width: 30%;
+	margin-left: 20px;
+}
+
+#introducion{
+	width: 70%;
+	margin-left: 15%;
+	
+	font-size: 30px;
+	text-align: center;
+	background-color: whitesmoke;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	border: groove 5px;
+	  box-shadow: #3D3D3D 5px 10px 8px 10px ;
+}
+
+#recetas{
+	width:1420px ;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	background-color: whitesmoke;
+	margin-top: 120px;
+}
+#recetas .receta{
+	width:700px ;
+	margin-left: 5px;
+	height: 500px;
+	display: inline-block;
+
+
+}
+.imagen{
+	height: 400px;
+	/* for old browsers */
+	background: #bdc3c7;  
+
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+	
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #2c3e50, #bdc3c7);
+
+
+}
+.contenido{
+	float: left;
+	height: 100px;
+	color: whitesmoke;
+	font-size: 20px;
+	padding-left: 3px;
+	/* for old browsers */
+	background-color: #2c3e50;
+
+}
+.contenido a{
+	color: whitesmoke;
+}
+.contenido .volverBoton{
+float: right;
+margin-bottom: 5px;
+}
+#formulario{
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	color: whitesmoke;
+	background: #424242;
+	
+}
+
+ .contacto{
+	color: whitesmoke;
+	float: right;
+}
+
+.content{
+	display:table; 
+	margin-bottom:60px; 
+	width:900px;
+}
+
+.content h2{
+	font-size:18px; 
+	font-weight:500; 
+	color:whitesmoke; 
+	border-bottom:1px solid #D2D1D1; 
+	display:table; padding-bottom:10px; 
+	margin-bottom:10px;
+}
+
+.content p{
+	font-size:14px; 
+	line-height:22px; 
+	color:#7c7c7c; 
+	text-align:justify;
+}
+
+@media only screen and (max-width: 1440px) {
+section{max-width:95%;}
+#recetas{
+	width:710px ;
+}
+}
+@media only screen and (max-width: 1407px) {
+.receta{
+	width: 99%;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+header{
+	padding:20px 0px;
+}
+
+#logo{
+	padding:0px;
+	height: 200px;
+}
+#introducion{
+	margin-left:2%;
+	width:50%;
+}
+
+input[type=checkbox] {
+	position: absolute; 
+	top: -9999px; 
+	left: -9999px;
+	background:none;
+}
+
+input[type=checkbox]:fous{
+	background:none;
+}
+
+label {
+	float:right; 
+	padding:8px 0px;
+	display:inline-block; 
+	cursor:pointer; 
+}
+
+input[type=checkbox]:checked ~ nav {
+	display:block;
+}
+
+nav{
+	display:none; 
+	margin-top: 179px;
+	position:absolute; 
+	right:0px; 
+	top:53px; 
+	background-color:whitesmoke; 
+	padding:0px; 
+	z-index:99;
+}
+
+nav ul{
+	width:auto;
+}
+
+nav ul li{
+	float:none; 
+	padding:0px;
+	width:100%;
+	display:table;
+}
+
+nav ul li a{
+	color:black; 
+	font-size: 40px;
+	padding:10px 20px; 
+	display:block; 
+	border-bottom: 1px solid rgba(225,225,225,0.1);
+}
+
+nav ul li a i{
+	color:#D2D1D1; 
+	padding-right:13px;
+}
+}
+.content{width:90%;}
+nav{
+	
+	margin-right: 0px;
+}
+}
+@media only screen and (max-width: 980px) {
+.content{width:90%;}
+nav{
+	margin-top: 117px;
+	margin-right: 0px;
+}
+nav ul li a{
+		font-size: 40px;
+}
+#introducion{
+	margin-left:2%;
+	width:20%;
+}
+}
+
+@media only screen and (max-width: 568px) {
+h1{padding:25px 0px;}
+h1 span{display:block;}
+#introducion{
+	margin-left:2%;
+	width:100%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+section {max-width: 90%;}
+#introducion{
+	margin-left:2%;
+	width:100%;
+}
+}
+
+@media only screen and (max-width: 360px) {
+h1{font-size:20px;}
+label{padding:5px 0px;}
+nav{top:47px;}
+#introducion{
+	margin-left:2%;
+	width:100%;
+}
+}
+
+@media only screen and (max-width: 320px) {
+h1 {padding: 20px 0px;}
+#introducion{
+	margin-left:2%;
+	width:100%;
+}
+}
